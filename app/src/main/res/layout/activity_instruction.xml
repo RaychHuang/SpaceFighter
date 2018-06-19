@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Instruction"
+    android:id="@+id/activity_instruction"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="50dp"
+    android:background="@drawable/universe"
+>
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Instruction:"
+        android:textColor="#CCCCCC"
+        android:textSize="40dp"
+        android:typeface="serif"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        />
+
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:text="Control the fighter to destroy enemies and avoid collision with airfreighters by tapping the screen to move up, as the fighter descends due to gravity"
+        android:textColor="#CCCCCC"
+        android:textSize="25dp"
+        android:typeface="serif"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/imagePlayer"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/player"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageEnemy"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/enemy"
+        android:layout_below="@+id/textView6"
+        android:layout_alignLeft="@+id/imagePlayer"
+        android:layout_marginLeft="300dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/imageAirfreighter"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/friend"
+        android:layout_below="@+id/imagePlayer"
+        android:layout_alignLeft="@+id/imagePlayer"
+        />
+
+    <TextView
+        android:id="@+id/textPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":Player"
+        android:textColor="#CCCCCC"
+        android:textSize="25dp"
+        android:typeface="serif"
+        android:layout_alignBottom="@+id/imagePlayer"
+        android:layout_toRightOf="@+id/imagePlayer"
+        android:layout_toEndOf="@+id/imagePlayer"
+        android:layout_marginBottom="17dp" />
+
+
+    <TextView
+        android:id="@+id/textEnemy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":Enemy"
+        android:textColor="#CCCCCC"
+        android:textSize="25dp"
+        android:typeface="serif"
+        android:layout_marginBottom="15dp"
+        android:layout_alignBottom="@+id/imageEnemy"
+        android:layout_toRightOf="@+id/imageEnemy"
+        android:layout_toEndOf="@+id/imageEnemy"
+        />
+
+    <TextView
+        android:id="@+id/textAirfreighter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":Airfreighter"
+        android:textColor="#CCCCCC"
+        android:textSize="25dp"
+        android:typeface="serif"
+        android:layout_marginBottom="15dp"
+        android:layout_alignBottom="@+id/imageAirfreighter"
+        android:layout_toRightOf="@+id/imageAirfreighter"
+        android:layout_toEndOf="@+id/imageAirfreighter"
+        />
+
+
+</RelativeLayout>
